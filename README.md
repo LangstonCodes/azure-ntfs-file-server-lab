@@ -4,6 +4,8 @@ A fully automated, Infrastructure-as-Code deployment of an Active Directory file
 
 This isn't a tutorial screenshot repo. Every fix in here came from a real failure I hit, diagnosed, and resolved on a live Azure subscription. The bugs — and how I found them — are documented below because that troubleshooting process is the actual point of the project.
 
+![Resource group overview](images/resource-group-overview.png)
+
 What This Deploys
 DC01 — Windows Server 2022, promoted to an Active Directory Domain Controller with DNS
 FS01 — Windows Server 2022, hosting four SMB shares (Finance, HR, Sales, IT) with NTFS permissions enforced per security group
