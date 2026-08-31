@@ -2,9 +2,32 @@ Azure NTFS File Server Lab — Terraform + Active Directory
 
 A fully automated, Infrastructure-as-Code deployment of an Active Directory file server environment on Azure — built with Terraform and PowerShell, and used to enforce real role-based access control across four departments.
 
+## Repository Structure
+
+```
+ntfs-lab-terraform/
+├── backend.tf
+├── versions.tf
+├── variables.tf
+├── main.tf
+├── keyvault.tf
+├── outputs.tf
+├── terraform.tfvars.example
+├── configure-lab.ps1
+└── scripts/
+    ├── 00-promote-dc.ps1
+    ├── 01-create-ad-users-groups.ps1
+    ├── 02-configure-shares-and-permissions.ps1
+    ├── 03-configure-rdp-gpo.ps1
+    ├── 04-domain-join.ps1
+    ├── 05-verify-ad.ps1
+    ├── 05-verify-shares.ps1
+    └── 06-add-rdp-users.ps1
+```
+
 This isn't a tutorial screenshot repo. Every fix in here came from a real failure I hit, diagnosed, and resolved on a live Azure subscription. The bugs — and how I found them — are documented below because that troubleshooting process is the actual point of the project.
 
-![Resource group overview](images/resource-group-overview.png)
+![Resource group overview](docs/screenshots/resource-group-overview.png)
 
 What This Deploys
 DC01 — Windows Server 2022, promoted to an Active Directory Domain Controller with DNS
