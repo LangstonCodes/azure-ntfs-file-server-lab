@@ -5,7 +5,7 @@ A fully automated, Infrastructure-as-Code deployment of an Active Directory file
 ## Repository Structure
 
 ```
-ntfs-lab-terraform/
+azure-ntfs-file-server-lab/
 ├── backend.tf
 ├── versions.tf
 ├── variables.tf
