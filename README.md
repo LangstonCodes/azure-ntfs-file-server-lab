@@ -3,7 +3,7 @@ Azure NTFS File Server Lab — Terraform + Active Directory
 A fully automated, Infrastructure-as-Code deployment of an Active Directory file server environment on Azure — built with Terraform and PowerShell, and used to enforce real role-based access control across four departments.
 
 Watch me build this here!
-https://www.loom.com/share/fec61003e38441be838993eb60a13833
+https://www.loom.com/share/0d23ccef6e8f4963ba820ab2c96cc276
 
 ## Repository Structure
 
